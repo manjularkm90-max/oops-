@@ -1,0 +1,19 @@
+Method: A block of code that performs an operation.
+
+Constructor: A special class member used to initialize objects.
+
+Instance variable: A non-static variable associated with an object.
+
+Static variable: A class-level variable shared by instances of that class.
+
+Access modifier: Controls access to classes and members.
+
+this: Refers to the current object.
+
+super: Refers to the superclass context.
+
+new: Creates objects or arrays in Java.
+
+Method overloading: Same method name with different parameter lists.
+
+Method overriding: A subclass provides its implementation of an inherited instance method.
