@@ -1,0 +1,76 @@
+# Day 1 – Object-Oriented Programming (OOPs) in Java
+
+## What is OOPs?
+
+OOPs stands for Object-Oriented Programming System. It is a programming approach based on classes and objects.
+
+OOPs helps us write reusable, organized, and maintainable code.
+
+## Four Main Pillars of OOPs
+
+1. **Encapsulation** – Wrapping data and methods into a single unit.
+2. **Inheritance** – One class acquiring the properties and methods of another class.
+3. **Polymorphism** – One method or interface behaving in different ways.
+4. **Abstraction** – Hiding implementation details and showing essential features.
+
+## Class and Object
+
+- **Class:** A blueprint for creating objects.
+- **Object:** An instance of a class.
+
+## Java Example
+
+```java
+class Student {
+    String name;
+    int age;
+
+    void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student();
+
+        s1.name = "Manjula";
+        s1.age = 21;
+
+        s1.display();
+    }
+}
+```
+
+### Output
+
+```text
+Name: Manjula
+Age: 21
+```
+
+## Interview Questions
+
+**1. What is OOPs?**
+
+OOPs is a programming approach based on classes and objects.
+
+**2. What is a class?**
+
+A class is a blueprint used to create objects.
+
+**3. What is an object?**
+
+An object is an instance of a class.
+
+**4. What are the four pillars of OOPs?**
+
+Encapsulation, Inheritance, Polymorphism, and Abstraction.
+
+## Day 1 Learning Summary
+
+- Learned the basics of OOPs.
+- Understood classes and objects.
+- Practiced a simple Java program.
+- Prepared basic OOPs interview questions.
+
+# Day 1 Completed ✅
