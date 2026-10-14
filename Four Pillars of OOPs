@@ -1,0 +1,114 @@
+A. Encapsulation
+
+Encapsulation means combining data and methods in one class and controlling access to the data.
+
+Example: A bank account keeps its balance private and provides methods to deposit or withdraw money.
+
+class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+Benefit: Helps protect data from direct, uncontrolled access.
+
+B. Inheritance
+
+Inheritance allows one class to acquire accessible properties and methods from another class.
+
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.bark();
+    }
+}
+
+Output:
+
+Animal is eating
+Dog is barking
+
+Benefit: Supports code reuse.
+
+C. Polymorphism
+
+Polymorphism means one interface or method name can represent different behaviors.
+
+Two important forms in Java are:
+
+Compile-time polymorphism: Method overloading
+
+Runtime polymorphism: Method overriding
+
+Example of method overloading:
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static void main(String[] args) {
+        Calculator c = new Calculator();
+
+        System.out.println(c.add(10, 20));
+        System.out.println(c.add(10, 20, 30));
+    }
+}
+
+Output:
+
+30
+60
+
+Benefit: Makes code flexible and easier to extend.
+
+D. Abstraction
+
+Abstraction means hiding implementation details and exposing essential functionality.
+
+Java supports abstraction through abstract classes and interfaces.
+
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    @Override
+    void start() {
+        System.out.println("Car starts with a key or button");
+    }
+
+    public static void main(String[] args) {
+        Car c = new Car();
+        c.start();
+    }
+}
+
+Output:
+
+Car starts with a key or button
+
+Benefit: Reduces complexity and separates what something does from how it works.
