@@ -1,0 +1,13 @@
+Real-Time Example
+
+Consider a bank account.
+
+A customer should not be able to change their bank balance directly. Instead, they should use controlled operations such as depositing or withdrawing money.Data protection: Restricts direct access to internal data.
+
+Controlled access: Allows validation before changing values.
+
+Maintainability: Internal implementation can change without changing how users access the class.
+
+Flexibility: Getter and setter methods can be modified as requirements change.
+
+Better organization: Data and related methods stay together in a class.
