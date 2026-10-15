@@ -1,0 +1,21 @@
+Java provides four access levels.
+
+Modifier
+
+Accessibility
+
+private
+
+Within the same class
+
+Default (no modifier)
+
+Within the same package
+
+protected
+
+Same package and subclasses, with additional rules across packages
+
+public
+
+Accessible wherever the declaring type and its enclosing types are accessible
