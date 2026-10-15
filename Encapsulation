@@ -1,0 +1,7 @@
+ Encapsulation in Java
+
+1. What is Encapsulation?
+
+Encapsulation is one of the four main pillars of Object-Oriented Programming (OOP).
+
+Definition: Encapsulation is the process of combining data (variables) and methods into a single unit (class) and controlling access to that data.
