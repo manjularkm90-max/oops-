@@ -1,0 +1,10 @@
+
+        d.eat();
+        d.bark();
+    }
+}
+
+Output
+
+Animal is eating
+Dog is barking
