@@ -1,0 +1,19 @@
+1. What Is Inheritance?
+
+Inheritance is one of the four main pillars of Object-Oriented Programming (OOP).
+
+Definition: Inheritance is a mechanism in Java in which one class acquires accessible fields and methods from another class.
+
+Inheritance helps us reuse existing code and reduce duplication.
+
+Example
+
+Consider an animal application.
+
+Animal is the parent class.
+
+Dog is the child class.
+
+A dog can use inherited methods from the Animal class.
+
+A dog can also define its own methods.
