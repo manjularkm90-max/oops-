@@ -1,0 +1,11 @@
+Parent class: The class whose accessible members are inherited.
+
+Child class: The class that extends another class.
+
+Superclass: Another name for a parent class.
+
+Subclass: Another name for a child class.
+
+extends: Keyword used to inherit from a class.
+
+super: Keyword used to access superclass members and constructors.
