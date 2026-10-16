@@ -1,0 +1,9 @@
+Code reusability: Reuse existing methods and fields.
+
+Less duplication: Avoid writing the same code in multiple classes.
+
+Easy maintenance: Shared behavior can be maintained in a common parent class.
+
+Extensibility: Child classes can add their own behavior.
+
+Runtime polymorphism: Inheritance supports method overriding and dynamic method dispatch.
