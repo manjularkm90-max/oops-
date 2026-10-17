@@ -1,0 +1,9 @@
+Method overloading means defining multiple methods with the same name but different parameter lists in the same class.
+
+The parameters can differ in:
+
+Number of parameters
+
+Parameter types
+
+Order of parameter types
