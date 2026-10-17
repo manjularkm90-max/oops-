@@ -1,0 +1,5 @@
+Java supports two commonly discussed forms:
+
+Compile-time polymorphism – Method overloading.
+
+Runtime polymorphism – Method overriding.
