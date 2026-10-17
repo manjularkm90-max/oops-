@@ -1,0 +1,21 @@
+Polymorphism is one of the four main pillars of Object-Oriented Programming (OOP).
+
+Definition: Polymorphism means "one name, many forms." It allows the same method name or interface to represent different behaviors.
+
+The word polymorphism comes from:
+
+Poly = Many
+
+Morph = Forms
+
+Real-World Example
+
+Consider a person who can perform different roles:
+
+At college, the person is a student.
+
+At home, the person is a family member.
+
+At work, the person is an employee.
+
+Similarly, in Java, the same method call can produce different behavior depending on the arguments or the actual object.
