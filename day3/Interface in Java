@@ -1,0 +1,38 @@
+An interface defines a contract that implementing classes agree to follow.
+
+Example
+
+interface Payment {
+    void pay();
+}
+
+class UpiPayment implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("Payment through UPI");
+    }
+}
+
+class CardPayment implements Payment {
+    @Override
+    public void pay() {
+        System.out.println("Payment through Card");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payment p1 = new UpiPayment();
+        Payment p2 = new CardPayment();
+
+        p1.pay();
+        p2.pay();
+    }
+}
+
+Output
+
+Payment through UPI
+Payment through Card
+
+Important: Interface methods declared without a body are implicitly public abstract. Therefore, the implementing methods must be public.
