@@ -1,0 +1,19 @@
+Abstract Method
+
+Concrete Method
+
+Does not have a method body
+
+Has a method body
+
+Declared using abstract in an abstract class
+
+Does not need abstract
+
+Must be implemented by a concrete subclass
+
+Can be used directly or overridden
+
+Example: abstract void run();
+
+Example: void run() { }
