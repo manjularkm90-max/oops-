@@ -1,0 +1,25 @@
+Banking System
+
+Encapsulation
+
+A bank account keeps its balance private. Customers cannot directly modify it; they use deposit and withdrawal methods.
+
+class BankAccount {
+    private double balance = 1000;
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+Abstraction
+
+A customer calls deposit() without needing to understand all the internal banking operations.
+
+Both concepts can work together in the same application.
