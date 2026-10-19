@@ -1,0 +1,130 @@
+Employee Salary
+
+class Employee {
+    private String name;
+    private double salary;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSalary(double salary) {
+        if (salary > 0) {
+            this.salary = salary;
+        } else {
+            System.out.println("Invalid salary");
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee e = new Employee();
+
+        e.setName("Arun");
+        e.setSalary(25000);
+
+        System.out.println("Name: " + e.getName());
+        System.out.println("Salary: " + e.getSalary());
+
+        e.setSalary(-5000);
+    }
+}
+
+Output
+
+Name: Arun
+Salary: 25000.0
+Invalid salary
+
+Explanation
+
+private String name: Restricts direct access to the name.
+
+private double salary: Restricts direct access to the salary.
+
+setSalary(): Validates salary before changing it.
+
+getSalary(): Returns the current salary.
+
+Important: Encapsulation does not automatically make data secure. The class must implement appropriate access controls and validation.
+
+3. Advantages of Encapsulation
+
+Protects object data from uncontrolled modification.
+
+Allows validation before values are changed.
+
+Makes code easier to maintain.
+
+Reduces dependency on internal implementation.
+
+Allows internal logic to change without changing the public methods.
+
+4. Abstraction in Detail
+
+Abstraction hides unnecessary implementation details and exposes only the operations users need.
+
+Java provides abstraction through:
+
+Abstract classes
+
+Interfaces
+
+Example: Payment System
+
+abstract class Payment {
+    abstract void pay(double amount);
+
+    void showMessage() {
+        System.out.println("Payment processing started");
+    }
+}
+
+class UpiPayment extends Payment {
+    @Override
+    void pay(double amount) {
+        System.out.println("Paid Rs. " + amount + " using UPI");
+    }
+}
+
+class CardPayment extends Payment {
+    @Override
+    void pay(double amount) {
+        System.out.println("Paid Rs. " + amount + " using Card");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Payment p = new UpiPayment();
+
+        p.showMessage();
+        p.pay(500);
+    }
+}
+
+Output
+
+Payment processing started
+Paid Rs. 500.0 using UPI
+
+Explanation
+
+Payment defines a common payment operation.
+
+pay() is abstract, so subclasses provide the implementation.
+
+UpiPayment implements payment using UPI.
+
+CardPayment implements payment using a card.
+
+The calling code can work with the common Payment type.
