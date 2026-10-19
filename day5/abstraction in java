@@ -1,0 +1,41 @@
+
+
+Explanation
+
+private: Prevents direct access from outside the class.
+
+setName() and setAge(): Allow controlled updates.
+
+getName() and getAge(): Allow access to the values.
+
+this: Refers to the current object.
+
+2. What is Abstraction?
+
+Abstraction means hiding implementation details and showing only the essential functionality.
+
+Java supports abstraction through abstract classes and interfaces.
+
+Example
+
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    @Override
+    void start() {
+        System.out.println("Car starts with a key");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Car();
+        v.start();
+    }
+}
+
+Output
+
+Car starts with a key
