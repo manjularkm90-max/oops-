@@ -1,0 +1,15 @@
+Encapsulation combines data and methods in a class while controlling direct access to the data.
+
+class BankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
