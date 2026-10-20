@@ -1,0 +1,43 @@
+Polymorphism means one method name or interface can support different behaviors.
+
+Compile-Time Polymorphism: Overloading
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+The compiler determines which overloaded method to call based on the arguments.
+
+Runtime Polymorphism: Overriding
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.sound();
+    }
+}
+
+Output
+
+Dog barks
+
+The overridden instance method is selected according to the actual object at runtime.
