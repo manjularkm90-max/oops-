@@ -1,0 +1,27 @@
+Class
+
+A class is a blueprint used to create objects.
+
+Object
+
+An object is an instance of a class. It has state and behavior.
+
+class Student {
+    String name;
+
+    void display() {
+        System.out.println("Name: " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.name = "Manjula";
+        s.display();
+    }
+}
+
+Output
+
+Name: Manjula
